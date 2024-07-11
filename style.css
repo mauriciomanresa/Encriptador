@@ -1,0 +1,193 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-image: url("./img/fondoEspacial.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(219, 225, 246);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+h1 {
+  font-size: 3em;
+  margin-top: 30px;
+  text-shadow: 4px 4px 6px #000;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 10px 0;
+  text-shadow: 2px 2px 4px #000;
+}
+
+div {
+  margin: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #d7cece;
+  border: 2px solid #605858;
+  border-radius: 10px;
+  resize: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #72f158;
+  color: rgb(12, 11, 11);
+  font-size: 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3cdbd5;
+}
+
+#entradas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px;
+  width: 100%;
+}
+
+#salidas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  flex-direction: column;
+  text-align: center;
+}
+
+#salida {
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px;
+  resize: none;
+  box-sizing: border-box;
+  background-color: #7b7575;
+  color: #72f158;
+  font-size: 1.5em;
+  font-weight: bold;
+  border: 2px solid #72f158;
+  border-radius: 10px;
+}
+
+/* Medias-query */
+@media (max-width: 1300px) and (min-width: 601px) {
+  #salida {
+    width: 90%;
+    font-size: 1.3em;
+    margin: 10px;
+  }
+
+  textarea {
+    width: 90%;
+    min-height: 90px;
+    font-size: 1.3em;
+  }
+
+  button {
+    font-size: 1.3em;
+    padding: 8px 18px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  div {
+    margin: 15px;
+  }
+
+  #entradas {
+    flex-direction: row;
+  }
+
+  #entradas > div {
+    flex: 1;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 601px) {
+  body {
+    background-size: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background-size: cover;
+  }
+
+  #salida {
+    width: 90%;
+    font-size: 1.1em;
+    margin: 5px;
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 80px;
+    font-size: 1.1em;
+  }
+
+  button {
+    font-size: 1.1em;
+    padding: 8px 16px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  div {
+    margin: 10px;
+  }
+
+  #entradas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #entradas > div {
+    width: 100%;
+    max-width: 90%;
+    margin: 5px 0;
+  }
+
+  #salidas {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}

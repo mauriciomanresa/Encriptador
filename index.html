@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <h1>Encriptador de Código</h1>
+    <h2>Introduce tu texto o código</h2>
+    <div id="entradas">
+      <div>
+        <textarea
+          id="ingresoTexto"
+          placeholder="Texto a codificar: ..."
+          rows="1"
+          cols="50"
+          onkeypress="handleKeyPress(event, 'codificar')"
+        ></textarea>
+        <button onclick="codificar()">Codificar</button>
+      </div>
+      <div>
+        <textarea
+          id="ingresoCodigo"
+          placeholder="Código a decodificar: ..."
+          rows="1"
+          cols="50"
+          onkeypress="handleKeyPress(event, 'decodificar')"
+        ></textarea>
+        <button onclick="decodificar()">Decodificar</button>
+      </div>
+    </div>
+    <div id="salidas">
+      <h2>Resultado: ...</h2>
+      <textarea id="salida" rows="1" cols="50"></textarea>
+    </div>
+    <br />
+    <footer><h4>(c) CMM-Designe 2.024</h4></footer>
+    <script src="./codigo.js"></script>
+  </body>
+</html>
